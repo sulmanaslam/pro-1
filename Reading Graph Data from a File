@@ -1,0 +1,10 @@
+Reading Graph Data from a File
+def read_graph_from_file(file_path):
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+        graph_data = [line.strip().split() for line in lines]
+    return graph_data
+
+# Example usage:
+graph_data = read_graph_from_file('graph_data.txt')
+# ... (process the graph_data) ...
