@@ -1,0 +1,14 @@
+Creating a Weighted Directed Graph
+class Graph:
+    def _init_(self, vertices):
+        self.V = vertices
+        self.graph = {i: [] for i in range(vertices)}
+
+    def addEdge(self, u, v, w):
+        self.graph[u].append((v, w))
+
+# Example usage:
+g = Graph(5)
+g.addEdge(0, 1, 10)
+g.addEdge(1, 2, 20)
+# ... (continue adding edges) ...
